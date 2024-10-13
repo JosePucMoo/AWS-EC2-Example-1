@@ -1,0 +1,25 @@
+{
+  "name": "example-aws-ec2",
+  "version": "1.0.0",
+  "description": "Aprendiendo a cargar un sitio web en un EC2 de AWS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosePucMoo/AWS-EC2-Example-1.git"
+  },
+  "author": "José Luis Puc Moo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosePucMoo/AWS-EC2-Example-1/issues"
+  },
+  "homepage": "https://github.com/JosePucMoo/AWS-EC2-Example-1#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "sass": "^1.79.5",
+    "gulp-terser": "^2.1.0",
+    "gulp-sass": "^5.1.0"
+  }
+}
