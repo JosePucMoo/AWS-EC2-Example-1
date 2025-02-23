@@ -10,7 +10,7 @@ cd /var/www/AWS-EC2-Example-1  # Cambia esto por la ruta real de tu repositorio
 sudo git pull origin main  # O la rama que estés usando
 
 echo "Moviendo archivos a la carpeta de publicación..."
-sudo rsync -av /var/www/AWS-EC2-Example-1 /var/www/html/  # 🔹 Cambia '/var/www/html/' según tu configuración
+sudo rsync -av /var/www/AWS-EC2-Example-1/ /var/www/html/  # 🔹 Cambia '/var/www/html/' según tu configuración
 
 echo "Encendiendo NGINX..."
 sudo systemctl start nginx
