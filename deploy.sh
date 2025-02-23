@@ -5,11 +5,12 @@ sudo systemctl stop nginx
 pkill ngrok  # Mata cualquier proceso en ejecución de ngrok
 
 echo "Actualizando el repositorio..."
+git config --global --add safe.directory /var/www/AWS-EC2-Example-1
 cd /var/www/AWS-EC2-Example-1  # Cambia esto por la ruta real de tu repositorio
-git pull origin main  # O la rama que estés usando
+sudo git pull origin main  # O la rama que estés usando
 
 echo "Moviendo archivos a la carpeta de publicación..."
-rsync -av --delete /var/www/AWS-EC2-Example-1 /var/www/html/  # 🔹 Cambia '/var/www/html/' según tu configuración
+sudo rsync -av --delete /var/www/AWS-EC2-Example-1 /var/www/html/  # 🔹 Cambia '/var/www/html/' según tu configuración
 
 echo "Encendiendo NGINX..."
 sudo systemctl start nginx
